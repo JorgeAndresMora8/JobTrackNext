@@ -1,0 +1,115 @@
+.login-container { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.login-image-area { 
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.login-form-area{ 
+    width: 20rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-title-area { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form-header{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.login-title-area b{ 
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.dont-have-account-flag{ 
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgb(91, 118, 188);
+    font-size: 0.85rem;
+}
+
+.dont-have-account-flag span{ 
+    color: #F1A34F;
+}
+
+.form-input-area{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-input-area input{ 
+    width: 90%;
+    border: 1px solid rgb(220, 220, 220);
+    padding: 8px 13px;
+    transition: 0.1s ease;
+    border-radius: 0.3rem;
+    
+
+}
+
+.form-input-area input:focus { 
+    outline: none;
+}
+
+.form-input-area label{ 
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'poppins', sans-serif;
+    color: rgb(84, 84, 84);
+}
+
+.login-form-btn{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #2a85ff;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.login-form-btn:hover{ 
+    background-color: #154482;
+    color: #fff;
+}
+
+.dont-have-account-flag span a { 
+    color: #1b4b89;
+    text-decoration: none;
+}

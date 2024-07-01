@@ -1,0 +1,38 @@
+.auth-navbar-container{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0px;
+}
+
+.btn-create-account{ 
+    background-color: #2a85ff;
+    color: #fff;
+    height: 2.5rem;
+    padding: 0px 10px;
+    border: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+
+.nav-link-list { 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link a { 
+    color: #1e1e1e;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    transition: 0.1s ease;
+}
+
+.nav-link a:hover { 
+    color: #2a85ff;
+}

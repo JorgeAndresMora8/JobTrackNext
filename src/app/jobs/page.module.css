@@ -1,0 +1,210 @@
+.home-job-container{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: self-start; */
+    gap: 20px;
+    background-color: #eef8ff;
+    padding: 2rem 0px;
+}
+
+.home-job-filter-area{ 
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 1px 2px 2px #e0eaff;
+    flex-direction: column;
+}
+
+.job-list-container{ 
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 1px 2px 2px #e0eaff;
+    flex-direction: column;
+    padding: 2rem 0px;
+}
+
+.suggested-job-icon { 
+    color: #0095ff;
+    font-size: 1.5rem;
+}
+
+.job-suggest-list-container{ 
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 1px 2px 2px #e0eaff;
+    flex-direction: column;
+    padding: 2rem 0px;
+}
+
+.container-header { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.container-header b{ 
+    color: #252525;
+    font-family: "poppins", sans-serif;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+
+.suggested-job-list { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.suggested-job-item{ 
+    width: 80%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.suggested-job-item-header { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.suggested-job-item-header b{ 
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    color: #2a2a2a;
+    margin-left: 1rem;
+}
+
+.suggested-job-item-body{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggested-job-item-body p{ 
+    font-weight: 300;
+    font-size: 0.75rem;
+    font-family: "poppins", sans-serif;
+    color: rgb(119, 119, 119);
+}
+
+.suggested-job-item-footer { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.suggested-job-item-footer p{ 
+    color: darkgray;
+    font-weight: 300;
+    font-size: 0.75rem;
+    font-family: "poppins", sans-serif;
+}
+
+.suggested-job-item-footer button{ 
+    background-color: #3b13cd;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 0.2rem;
+
+}
+
+
+.filter-item { 
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.filter-item b{ 
+    color: #212121;
+    font-family: "poppins", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+
+.filter-item ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-item ul li { 
+    font-family: "poppins", sans-serif;
+    color: rgb(83, 83, 83);
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+.job-detail-header-icon{
+    background-color: #1380cd;
+}
+
+@media screen and (max-width: 1020px) { 
+    .home-job-container{ 
+        flex-direction: column;
+    }
+
+    .home-job-filter-area { 
+        width: 100%;
+        height: auto;
+    }
+
+    .job-list-container{ 
+        width: 100%;
+        height: auto;
+    }
+    
+    .job-suggest-list-container { 
+        width: 100%;
+        height: auto;
+    }
+
+}

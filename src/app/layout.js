@@ -1,5 +1,12 @@
+import AuthNavbar from "@/Components/AuthNavbar/AuthNavbar";
+import Footer from "@/Components/Footer/Footer";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
+
+config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} style={{margin: 0, padding: 0}}>
+        <AuthNavbar />
+        {/* <SessionAuthProvider> */}
+          {children}
+        {/* </SessionAuthProvider> */}
+        <Footer />
+      </body>
     </html>
   );
 }

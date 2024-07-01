@@ -1,0 +1,24 @@
+.not-found-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0px;
+}
+
+.not-found-icon { 
+    font-size: 2.5rem;
+    color: #2a85ff;
+}
+
+.not-found-container b{ 
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: "poppins", sans-serif;
+    color: #111111;
+}
+
+.not-found-container b span{ 
+    font-weight: 600;
+    color: #2a85ff;
+}

@@ -1,0 +1,44 @@
+.cv-input-container{ 
+    width: 20rem;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.input-area{ 
+    width: 20rem;
+    height: auto;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-cv { 
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.cv-image-button { 
+    background-color: #4E00F7;
+    color: #fff;
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+}
+
+.input-area p{ 
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+}

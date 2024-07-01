@@ -1,0 +1,60 @@
+.suggested-job-list { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.suggest-job-banner { 
+    width: 90%;
+    height: auto;
+    background-color: #090921;
+    margin: 1rem 0px;
+    border-radius: 1rem;
+    background-image: url(/JobBannerBackground.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.suggest-job-banner-text-area { 
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.suggest-job-banner-text-area b{ 
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.suggest-job-banner-text-area p { 
+    font-weight: 300;
+    font-size: 0.9rem;
+    font-family: "poppins", sans-serif;
+    color: #c8c8c8;
+    margin: 0;
+}
+
+.suggest-job-banner-text-area ul { 
+    list-style: none;
+    margin: 1rem 0px;
+    padding: 0;
+}
+
+.suggest-job-banner-text-area ul li { 
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.9rem;
+    font-family: "poppins", sans-serif;
+}

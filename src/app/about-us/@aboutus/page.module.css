@@ -1,0 +1,200 @@
+.about-us-container{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-us-image-area { 
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.about-us-text-area { 
+    width: 30rem;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.company-logo-container { 
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 10px;
+}
+
+.company-logo-item{ 
+    width: 12rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-we-work-container { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0px;
+}
+
+.how-we-work-body { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 2rem 0px;
+    flex-wrap: wrap;
+}
+
+.how-we-work-body-item { 
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 1px solid #C301FF;
+    border-bottom: 1px solid #C301FF   ;
+}
+
+.about-us-text-area b{ 
+    font-weight: 600;
+    font-size: 2.5rem;
+    font-family: "poppins", sans-serif;
+}
+
+.about-us-text-area p{ 
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.about-us-text-area a{ 
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    color: #ffffff;
+    background-color: #2A85FF;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.how-we-work-header b{ 
+    font-weight: 600;
+    font-size: 2.5rem;
+    font-family: "poppins", sans-serif;
+}
+
+.how-we-work-body-item span { 
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    color: #C301FF;
+}
+
+.how-we-work-body-item b { 
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+}
+
+.how-we-work-body-item p{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #3e3e3e;
+}
+
+@media (max-width: 425px) {
+
+    .about-us-image-area { 
+        width: 85%;
+        height: auto;
+    }
+
+    .company-logo-container { 
+        width: 100%;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .company-logo-item { 
+        width: 10rem;
+        height: auto;
+    }
+    
+    .how-we-work-header b{ 
+        font-size: 1.4rem;
+        font-family: "poppins", sans-serif;
+    }
+
+    .about-us-text-area{ 
+        width: 80%;
+    }
+
+    .about-us-text-area b{ 
+            font-size: 1.4rem;
+    }
+
+    .about-us-text-area p{
+        font-size: 0.8rem;
+    }
+
+    .about-us-text-area a{ 
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+
+    .how-we-work-body { 
+        margin: 0.5rem 0px;
+    }
+
+    .how-we-work-body-item { 
+        border-top: 0px;
+        height: auto;
+        width: 85%;
+    }
+
+    .how-we-work-body-item span{ 
+        font-size: 1.5rem;
+    }
+
+    .how-we-work-body-item b{ 
+        font-size: 1.2rem;
+    }
+
+    .how-we-work-body-item p{ 
+        font-size: 0.85rem;
+    }
+
+    .about-us-container{ 
+        margin: 2rem 0px;
+    }
+
+}

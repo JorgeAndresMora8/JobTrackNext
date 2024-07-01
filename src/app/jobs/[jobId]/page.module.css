@@ -1,0 +1,137 @@
+
+
+.job-detail-container { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 3rem 0px;
+}
+
+.job-detail-header-option {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.job-detail-area { 
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.job-detail-header { 
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.job-detail-hightlight{ 
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.job-detail-hightlight-item{ 
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.job-detail-name { 
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.job-detail-company { 
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    margin: 0;
+}
+
+.job-detail-location{ 
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    margin: 1rem 0px;
+}
+
+.job-detail-hightlight-item p{ 
+    font-weight: 300;
+    font-size: 0.85rem;
+    font-family: "poppins", sans-serif;
+}
+
+.job-detail-body { 
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.job-detail-body-description { 
+    width: 80%;
+}
+
+.job-detail-body-description b{ 
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(100, 100, 100);
+}
+
+.job-detail-body-description p{ 
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(81, 81, 81);
+}
+
+.btn-apply-now { 
+    background-color: #2a85ff;
+    width: 10rem;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+.btn-apply-now a{ 
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 450px) { 
+    .job-detail-name{ 
+        color: #2a85ff;
+    }
+}
