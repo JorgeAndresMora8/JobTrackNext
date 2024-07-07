@@ -14,7 +14,7 @@ export default function Form() {
             <b>Join <span style={{color: "#5AB2FF"}}>The Team</span></b>
             <p>Unlock your next career opportunity! Complete the form below to showcase your skills and experience. </p>
         </div>
-      <JobApplicationForm action={handleJobApplicationSubmit}/>
+      {/* <JobApplicationForm action={handleJobApplicationSubmit}/> */}
     </div>
   );
 }

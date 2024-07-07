@@ -6,7 +6,7 @@ import classes from "./page.module.css";
 import { PORT } from "../../../../Config/Config";
 
 async function getJob(id){ 
-  const resp = await fetch(`http://localhost:${PORT}/api/jobs/${id}`)
+  const resp = await fetch(`https://job-track-next-l83o0mv0i-jorgemoras-projects.vercel.app/api/jobs/${id}`)
   const data = await resp.json(); 
   return data
 }
