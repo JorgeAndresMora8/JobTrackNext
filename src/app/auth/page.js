@@ -1,5 +1,5 @@
 import classes from './page.module.css'
-import { LoginForm } from './loginForm'
+import { LoginForm } from './LoginForm'
 import { handleLoginSubmit } from '@/actions/Auth'
 
 
