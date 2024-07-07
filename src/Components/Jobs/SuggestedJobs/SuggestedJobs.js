@@ -3,17 +3,27 @@ import SuggestedJobsItem from "../SuggestedJobItem/SuggestedJobItem";
 import classes from "./suggested-jobs.module.css";
 import { faClock, faLocation, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 
+async function getSuggestedJob(){ 
+  const resp = await fetch('http://localhost:3000/api/jobs/search?category=programming')
+  const data = await resp.json(); 
+  return data;
+}
+
 export default async function SuggestedJobs() {
 
-  const url = `http://localhost:8080/jobs/search?category=programming`;
+  // const url = `http://localhost:8080/jobs/search?category=programming`;
 
-  const response = await fetch(url, { cache: "no-store" });
+  // const response = await fetch(url, { cache: "no-store" });
 
-  if (!response.ok) {
-    throw new Error("failed to fetch jobs");
-  }
+  // if (!response.ok) {
+  //   throw new Error("failed to fetch jobs");
+  // }
 
-  const jobs = await response.json();
+  // const jobs = await response.json();
+
+  const jobs = await getSuggestedJob();
+
+  console.log(jobs)
 
   return (
     <>

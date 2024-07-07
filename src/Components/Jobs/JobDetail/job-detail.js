@@ -4,7 +4,7 @@ import { faClock, faHandHoldingDollar, faWifi } from '@fortawesome/free-solid-sv
 import Link from 'next/link'
 
 export default function JobDetailItem({ job }){ 
-    console.log(job)
+    // console.log(job.jobname)
     return ( 
         <>
         <div className={classes["job-detail-area"]}>
@@ -58,10 +58,10 @@ export default function JobDetailItem({ job }){
       </div>
       <div className={classes['btn-detail-option']}>
       <button className={classes['btn-apply-now']}>
-        <Link href={`/jobs/${job.id}/form`}>Apply Now</Link>
+        {/* <Link href={`/jobs/${job.id}/form`}>Apply Now</Link> */}
       </button>
       <button className={classes['btn-apply-now']}>
-        <Link href={job.resource}>About the company</Link>
+        {/* <Link href={job.resource}>About the company</Link> */}
       </button>
       </div>
       </>

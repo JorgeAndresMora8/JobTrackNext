@@ -1,19 +1,20 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import classes from "./page.module.css";
-import { faArrowLeftLong, faClock, faHandHoldingDollar, faWifi } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 import JobDetailItem from "@/Components/Jobs/JobDetail/job-detail";
-import { notFound } from "next/navigation";
+import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import classes from "./page.module.css";
+import { PORT } from "../../../../Config/Config";
+
+async function getJob(id){ 
+  const resp = await fetch(`http://localhost:${PORT}/api/jobs/${id}`)
+  const data = await resp.json(); 
+  return data
+}
 
 export default async function JobDetail({ params }) {
 
-  const response = await fetch(`http://localhost:8080/jobs/${params.jobId}`, { cache: 'no-store' })
-
-  if(!response.ok){ 
-    throw new Error('failed to fetch job details')
-  }
-
-  const job = await response.json()
+  const job = await getJob(params.jobId)
+  console.log(process.env.PORT)
   
   return (
     <div className={classes["job-detail-container"]}>
@@ -23,7 +24,7 @@ export default async function JobDetail({ params }) {
         </div>
       </div>
 
-      <JobDetailItem job={job}/> 
+      <JobDetailItem job={job[0]}/> 
       
     </div>
   );

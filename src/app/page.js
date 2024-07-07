@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import classes from "./page.module.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '../styles/tailwind.css';
 
 export default function Home() {
   redirect;

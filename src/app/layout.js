@@ -4,6 +4,8 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { NavbarComponent } from "@/Components/Navbar/NavbarComponent";
+
 
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
@@ -19,7 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className} style={{margin: 0, padding: 0}}>
-        <AuthNavbar />
+        <NavbarComponent />
+        {/* <AuthNavbar /> */}
         {/* <SessionAuthProvider> */}
           {children}
         {/* </SessionAuthProvider> */}
