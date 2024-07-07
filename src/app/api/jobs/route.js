@@ -8,12 +8,7 @@ export async function GET(request) {
     // Perform actions on the database
     const data = await db.collection('jobs').find({}).toArray();
 
-    return new Response(JSON.stringify(data), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    return new Response(JSON.stringify(data));
   } catch (e) {
     console.error(e);
     return new Response(JSON.stringify({ error: 'An error occurred while connecting to the database' }), {

@@ -5,17 +5,29 @@ import SearchJobs from "@/actions/SearchJobs";
 import {
   faBriefcase
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classes from "./page.module.css";
-import { PORT } from "../../../Config/Config";
+
+const isDevelopment = process.env.NODE_ENV !== 'production';
+const apiUrl = isDevelopment
+  ? process.env.NEXT_PUBLIC_API_URL
+  : `https://${process.env.VERCEL_URL}`;
 
 async function getJobs(){ 
-  const resp = await fetch(`https://job-track-next-l83o0mv0i-jorgemoras-projects.vercel.app/api/jobs`)
-  const data = await resp.json();
-  return data
+  try {
+    const resp = await fetch(`${apiUrl}/api/jobs`);
+    if (!resp.ok) {
+      throw new Error(`HTTP error! Status: ${resp.status}`);
+    }
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    console.error('Failed to fetch jobs:', error);
+    return []; // Return an empty array as a fallback
+  }
 }
 
-export default async function JobHome({ searchParams }) {
+export default async function JobHome() {
 
   const jobs = await getJobs()
 
